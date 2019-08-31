@@ -81,14 +81,14 @@ namespace ConsoleApp2
                 }
                 if (counter == 1)
                 {
-                    numStringName = $"{GetThreeDigitStringName(listItem)} Thousand And {numStringName}";
+                    numStringName = $"{GetThreeDigitStringName(listItem)} Thousand {numStringName}";
                 }
                 if (counter == 2)
                 {
-                    numStringName = $"{GetThreeDigitStringName(listItem)} Million And {numStringName}";
+                    numStringName = $"{GetThreeDigitStringName(listItem)} Million {numStringName}";
                 }
                 if (counter == 3)
-                    numStringName = $"{GetThreeDigitStringName(listItem)} Billion And {numStringName} ";
+                    numStringName = $"{GetThreeDigitStringName(listItem)} Billion {numStringName} ";
 
                 counter++;
             }
@@ -112,7 +112,7 @@ namespace ConsoleApp2
                 }
                 else if (counter == 2)
                 {
-                    st.Add($"{GetStringNum(Int32.Parse(t.ToString()))} Hundred ");
+                    st.Add($"{GetStringNum(Int32.Parse(t.ToString()))} Hundred And");
                 }
 
                 counter++;
